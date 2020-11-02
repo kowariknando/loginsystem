@@ -83,11 +83,8 @@ if do_you_have_user == 'yes':
     print('WELCOME TO THE PORTAL')
     print('The current users are: ')
     print(users)
-
-
 with open('users.csv', 'w') as app_f:
     for key in users.keys():
         app_f.write("%s,%s\n" % (key, users[key]))
 
-# TODO  crear un fichero en base al diccionario users que se abra y se salve en alg'un tipo de file .txt o lo que sea. Que se abra con un with open as
 input('press enter to finish')
